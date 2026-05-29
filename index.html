@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMC Review Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar" aria-label="Lessons">
+        <div class="brand">
+          <div class="brand-mark">12</div>
+          <div>
+            <h1>AMC Review</h1>
+            <p id="brandSubtitle">No-calculator solution studio</p>
+          </div>
+        </div>
+        <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language">
+          中文
+        </button>
+        <label class="search">
+          <span id="searchLabel">Search</span>
+          <input id="searchInput" type="search" placeholder="lesson, topic, method..." />
+        </label>
+        <div class="filters" role="group" aria-label="Status filters">
+          <button class="chip active" data-status="all">All</button>
+          <button class="chip" data-status="verified">Verified</button>
+          <button class="chip" data-status="needs-review">Needs review</button>
+        </div>
+        <nav id="lessonNav" class="lesson-nav"></nav>
+      </aside>
+
+      <section class="content">
+        <header class="topbar">
+          <div>
+            <p id="eyebrow" class="eyebrow">Curriculum map</p>
+            <h2 id="lessonTitle">All lessons</h2>
+          </div>
+          <div class="stats" aria-label="Catalog statistics">
+            <div><strong id="verifiedCount">0</strong><span id="verifiedStat">verified</span></div>
+            <div><strong id="lessonCount">30</strong><span id="lessonStat">lessons</span></div>
+            <div><strong id="exampleCount">639</strong><span id="exampleStat">indexed examples</span></div>
+          </div>
+        </header>
+
+        <section class="focus-band" aria-label="Study workflow">
+          <div class="focus-art" aria-hidden="true">
+            <div class="gridline"></div>
+            <div class="curve"></div>
+            <div class="node n1"></div>
+            <div class="node n2"></div>
+            <div class="node n3"></div>
+          </div>
+          <div class="focus-copy">
+            <h3 id="focusTitle">Every example must earn its place.</h3>
+            <p id="focusText">
+              A problem is not complete until it has a lesson tag, a precise knowledge point,
+              at least one mental path, and a checked alternative solution.
+            </p>
+          </div>
+        </section>
+
+        <div id="topicTabs" class="topic-tabs" role="tablist" aria-label="Knowledge points"></div>
+        <section id="problemList" class="problem-list" aria-live="polite"></section>
+      </section>
+
+      <aside class="inspector" aria-label="Selected problem">
+        <div id="inspectorEmpty" class="empty-state">
+          <h2 id="emptyTitle">Select a problem</h2>
+          <p id="emptyText">Use this panel to compare no-calculator approaches and audit the reasoning.</p>
+        </div>
+        <article id="problemDetail" class="problem-detail hidden"></article>
+      </aside>
+    </main>
+
+    <script src="./src/data.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

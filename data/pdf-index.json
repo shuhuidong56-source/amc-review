@@ -1,0 +1,3441 @@
+{
+  "source": "/Users/liangjuan/Desktop/AMC12新版教材.pdf",
+  "pageCount": 458,
+  "lessonCount": 30,
+  "exampleCount": 639,
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Prime Factorizations",
+      "startPage": 4,
+      "examples": [
+        {
+          "example": 1,
+          "page": 4,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 5,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 6,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 6,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 6,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 7,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 7,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 8,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 8,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 9,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 10,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 10,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 11,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 11,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 12,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 13,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 13,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 14,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 14,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 15,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 21
+    },
+    {
+      "lesson": 2,
+      "title": "Lcm, Gcd and Congruence",
+      "startPage": 22,
+      "examples": [
+        {
+          "example": 1,
+          "page": 23,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 23,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 23,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 24,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 24,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 25,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 26,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 27,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 27,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 28,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 28,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 28,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 28,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 29,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 29,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 30,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 30,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 30,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 31,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 31,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 31,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 32,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 37
+    },
+    {
+      "lesson": 3,
+      "title": "Congruence and divisibility",
+      "startPage": 38,
+      "examples": [
+        {
+          "example": 1,
+          "page": 38,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 38,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 39,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 39,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 40,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 40,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 40,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 41,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 42,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 42,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 42,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 43,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 43,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 43,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 44,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 44,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 44,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 45,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 46,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 46,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 46,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 51
+    },
+    {
+      "lesson": 4,
+      "title": "Digits and base number",
+      "startPage": 52,
+      "examples": [
+        {
+          "example": 1,
+          "page": 52,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 52,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 52,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 53,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 53,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 53,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 54,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 54,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 56,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 56,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 57,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 57,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 57,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 58,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 58,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 58,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 59,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 59,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 60,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 60,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 60,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 65
+    },
+    {
+      "lesson": 5,
+      "title": "Arithmetic sequence and Geometric sequence",
+      "startPage": 66,
+      "examples": [
+        {
+          "example": 1,
+          "page": 67,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 67,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 67,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 67,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 68,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 68,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 68,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 69,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 69,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 70,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 70,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 71,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 72,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 73,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 73,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 73,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 73,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 74,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 74,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 75,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 75,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 80
+    },
+    {
+      "lesson": 6,
+      "title": "Recursion sequence",
+      "startPage": 81,
+      "examples": [
+        {
+          "example": 1,
+          "page": 81,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 81,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 81,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 82,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 82,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 82,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 83,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 83,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 83,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 84,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 84,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 85,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 85,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 85,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 86,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 86,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 87,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 87,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 88,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 88,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 88,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 89,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 89,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 89,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 90,
+          "status": "needs-review"
+        },
+        {
+          "example": 26,
+          "page": 90,
+          "status": "needs-review"
+        },
+        {
+          "example": 27,
+          "page": 90,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 95
+    },
+    {
+      "lesson": 7,
+      "title": "Factorization, Fraction and Radicals",
+      "startPage": 96,
+      "examples": [
+        {
+          "example": 1,
+          "page": 97,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 97,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 97,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 98,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 98,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 98,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 98,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 99,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 99,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 99,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 99,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 100,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 100,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 100,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 101,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 101,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 101,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 102,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 102,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 103,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 103,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 104,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 104,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 105,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 105,
+          "status": "needs-review"
+        },
+        {
+          "example": 26,
+          "page": 105,
+          "status": "needs-review"
+        },
+        {
+          "example": 27,
+          "page": 105,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 109
+    },
+    {
+      "lesson": 8,
+      "title": "Polynomials, Absolute functions,",
+      "startPage": 110,
+      "examples": [
+        {
+          "example": 1,
+          "page": 111,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 111,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 112,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 112,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 112,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 112,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 113,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 113,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 113,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 114,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 114,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 115,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 116,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 117,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 117,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 117,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 118,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 118,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 118,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 119,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 119,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 120,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 120,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 120,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 121,
+          "status": "needs-review"
+        },
+        {
+          "example": 26,
+          "page": 121,
+          "status": "needs-review"
+        },
+        {
+          "example": 27,
+          "page": 122,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 126
+    },
+    {
+      "lesson": 9,
+      "title": "Transformation, Circle and Conics",
+      "startPage": 127,
+      "examples": [
+        {
+          "example": 1,
+          "page": 129,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 129,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 129,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 130,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 130,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 130,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 131,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 131,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 131,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 132,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 132,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 133,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 133,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 133,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 134,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 134,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 137,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 137,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 138,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 138,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 139,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 139,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 144
+    },
+    {
+      "lesson": 10,
+      "title": "Floor function, Quadratic",
+      "startPage": 145,
+      "examples": [
+        {
+          "example": 1,
+          "page": 146,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 146,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 147,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 147,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 148,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 148,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 148,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 149,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 149,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 151,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 151,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 151,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 152,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 152,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 152,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 153,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 153,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 153,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 154,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 154,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 154,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 155,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 160
+    },
+    {
+      "lesson": 11,
+      "title": "Diophantine equations and word problem",
+      "startPage": 161,
+      "examples": [
+        {
+          "example": 1,
+          "page": 161,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 161,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 162,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 162,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 163,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 163,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 163,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 164,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 164,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 164,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 165,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 165,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 165,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 166,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 166,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 166,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 167,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 167,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 168,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 168,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 173
+    },
+    {
+      "lesson": 12,
+      "title": "Inequalities, Cauthy and fundamental inequality",
+      "startPage": 174,
+      "examples": [
+        {
+          "example": 1,
+          "page": 174,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 174,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 175,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 176,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 177,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 177,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 178,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 178,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 178,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 179,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 179,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 179,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 180,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 180,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 181,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 181,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 182,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 182,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 182,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 182,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 183,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 183,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 183,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 183,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 187
+    },
+    {
+      "lesson": 13,
+      "title": "Trigonometry functions, Compounded angles",
+      "startPage": 188,
+      "examples": [
+        {
+          "example": 1,
+          "page": 190,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 190,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 190,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 190,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 191,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 191,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 191,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 191,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 192,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 192,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 192,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 194,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 194,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 195,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 195,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 195,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 195,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 195,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 196,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 196,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 196,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 196,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 197,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 197,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 197,
+          "status": "needs-review"
+        },
+        {
+          "example": 26,
+          "page": 198,
+          "status": "needs-review"
+        },
+        {
+          "example": 27,
+          "page": 198,
+          "status": "needs-review"
+        },
+        {
+          "example": 28,
+          "page": 199,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 203
+    },
+    {
+      "lesson": 14,
+      "title": "Logarithms",
+      "startPage": 204,
+      "examples": [
+        {
+          "example": 1,
+          "page": 205,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 205,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 205,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 206,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 206,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 206,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 206,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 207,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 207,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 207,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 207,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 208,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 208,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 208,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 208,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 209,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 209,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 209,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 209,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 210,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 210,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 210,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 211,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 211,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 211,
+          "status": "needs-review"
+        },
+        {
+          "example": 26,
+          "page": 212,
+          "status": "needs-review"
+        },
+        {
+          "example": 27,
+          "page": 212,
+          "status": "needs-review"
+        },
+        {
+          "example": 28,
+          "page": 212,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 216
+    },
+    {
+      "lesson": 15,
+      "title": "Complex number and equations",
+      "startPage": 217,
+      "examples": [
+        {
+          "example": 1,
+          "page": 218,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 219,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 219,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 219,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 219,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 220,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 220,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 220,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 220,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 221,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 221,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 221,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 222,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 222,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 222,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 223,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 223,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 223,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 224,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 224,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 228
+    },
+    {
+      "lesson": 16,
+      "title": "Polar form of comlex number and unit roots",
+      "startPage": 229,
+      "examples": [
+        {
+          "example": 1,
+          "page": 230,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 230,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 230,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 231,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 231,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 231,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 231,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 232,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 232,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 232,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 233,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 233,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 233,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 234,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 234,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 234,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 235,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 235,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 235,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 236,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 236,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 236,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 237,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 241
+    },
+    {
+      "lesson": 17,
+      "title": "Mid-term exam",
+      "startPage": 242,
+      "examples": [],
+      "endPage": 251
+    },
+    {
+      "lesson": 18,
+      "title": "Right triangles, regular polygons and area method",
+      "startPage": 252,
+      "examples": [
+        {
+          "example": 1,
+          "page": 253,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 253,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 253,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 253,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 254,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 254,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 254,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 255,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 255,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 255,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 255,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 256,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 256,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 257,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 257,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 259,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 259,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 259,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 259,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 260,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 260,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 261,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 261,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 262,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 262,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 268
+    },
+    {
+      "lesson": 19,
+      "title": "Sine rule, Cosine rule, Median and Centroid",
+      "startPage": 269,
+      "examples": [
+        {
+          "example": 1,
+          "page": 269,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 269,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 270,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 270,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 270,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 271,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 271,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 271,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 272,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 272,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 272,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 273,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 273,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 274,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 275,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 275,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 275,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 276,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 276,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 276,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 277,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 282
+    },
+    {
+      "lesson": 20,
+      "title": "Parallel lines and similar triangles",
+      "startPage": 283,
+      "examples": [
+        {
+          "example": 1,
+          "page": 286,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 286,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 287,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 287,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 288,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 288,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 288,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 289,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 289,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 290,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 290,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 290,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 291,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 291,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 291,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 292,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 292,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 292,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 293,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 293,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 293,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 299
+    },
+    {
+      "lesson": 21,
+      "title": "Angle bisector and inscribed circle",
+      "startPage": 300,
+      "examples": [
+        {
+          "example": 1,
+          "page": 301,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 301,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 302,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 302,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 302,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 303,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 303,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 303,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 304,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 307,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 307,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 308,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 308,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 308,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 309,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 309,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 309,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 310,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 310,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 314
+    },
+    {
+      "lesson": 22,
+      "title": "Circle",
+      "startPage": 315,
+      "examples": [
+        {
+          "example": 1,
+          "page": 318,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 318,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 318,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 319,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 319,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 319,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 320,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 320,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 321,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 321,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 322,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 323,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 323,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 324,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 324,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 325,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 325,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 325,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 326,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 326,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 327,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 327,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 328,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 328,
+          "status": "needs-review"
+        },
+        {
+          "example": 25,
+          "page": 329,
+          "status": "needs-review"
+        },
+        {
+          "example": 26,
+          "page": 329,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 336
+    },
+    {
+      "lesson": 23,
+      "title": "Solid geometry",
+      "startPage": 337,
+      "examples": [
+        {
+          "example": 1,
+          "page": 339,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 339,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 340,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 340,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 341,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 341,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 341,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 342,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 342,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 342,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 343,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 343,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 343,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 344,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 345,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 346,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 346,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 346,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 347,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 347,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 347,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 348,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 348,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 353
+    },
+    {
+      "lesson": 24,
+      "title": "Sum rule and Product rule",
+      "startPage": 354,
+      "examples": [
+        {
+          "example": 1,
+          "page": 354,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 355,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 355,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 355,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 356,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 356,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 356,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 357,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 357,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 357,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 358,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 358,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 359,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 359,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 359,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 360,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 360,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 360,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 361,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 361,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 361,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 362,
+          "status": "needs-review"
+        },
+        {
+          "example": 23,
+          "page": 362,
+          "status": "needs-review"
+        },
+        {
+          "example": 24,
+          "page": 363,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 369
+    },
+    {
+      "lesson": 25,
+      "title": "Permutation and combination",
+      "startPage": 370,
+      "examples": [
+        {
+          "example": 1,
+          "page": 371,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 371,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 371,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 372,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 372,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 372,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 373,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 373,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 373,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 374,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 374,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 374,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 375,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 375,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 375,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 376,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 376,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 376,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 377,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 377,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 377,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 378,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 383
+    },
+    {
+      "lesson": 26,
+      "title": "Positive integer solutions and Recursion method",
+      "startPage": 384,
+      "examples": [
+        {
+          "example": 1,
+          "page": 384,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 385,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 385,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 385,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 386,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 386,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 387,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 387,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 388,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 388,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 388,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 389,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 389,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 389,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 390,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 390,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 390,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 391,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 391,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 392,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 396
+    },
+    {
+      "lesson": 27,
+      "title": "Classical probability",
+      "startPage": 397,
+      "examples": [
+        {
+          "example": 1,
+          "page": 397,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 398,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 398,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 398,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 399,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 399,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 399,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 400,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 400,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 401,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 401,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 402,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 402,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 403,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 403,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 404,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 404,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 405,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 405,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 406,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 407,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 407,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 414
+    },
+    {
+      "lesson": 28,
+      "title": "Expected value, Geometric probability",
+      "startPage": 415,
+      "examples": [
+        {
+          "example": 1,
+          "page": 415,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 415,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 416,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 416,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 417,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 417,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 417,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 419,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 419,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 419,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 420,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 420,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 420,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 421,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 421,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 422,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 422,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 422,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 423,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 423,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 424,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 429
+    },
+    {
+      "lesson": 29,
+      "title": "Statistic, Proposition and Logic",
+      "startPage": 430,
+      "examples": [
+        {
+          "example": 1,
+          "page": 431,
+          "status": "needs-review"
+        },
+        {
+          "example": 2,
+          "page": 431,
+          "status": "needs-review"
+        },
+        {
+          "example": 3,
+          "page": 431,
+          "status": "needs-review"
+        },
+        {
+          "example": 4,
+          "page": 431,
+          "status": "needs-review"
+        },
+        {
+          "example": 5,
+          "page": 432,
+          "status": "needs-review"
+        },
+        {
+          "example": 6,
+          "page": 432,
+          "status": "needs-review"
+        },
+        {
+          "example": 7,
+          "page": 432,
+          "status": "needs-review"
+        },
+        {
+          "example": 8,
+          "page": 434,
+          "status": "needs-review"
+        },
+        {
+          "example": 9,
+          "page": 434,
+          "status": "needs-review"
+        },
+        {
+          "example": 10,
+          "page": 435,
+          "status": "needs-review"
+        },
+        {
+          "example": 11,
+          "page": 435,
+          "status": "needs-review"
+        },
+        {
+          "example": 12,
+          "page": 436,
+          "status": "needs-review"
+        },
+        {
+          "example": 13,
+          "page": 436,
+          "status": "needs-review"
+        },
+        {
+          "example": 14,
+          "page": 436,
+          "status": "needs-review"
+        },
+        {
+          "example": 15,
+          "page": 437,
+          "status": "needs-review"
+        },
+        {
+          "example": 16,
+          "page": 437,
+          "status": "needs-review"
+        },
+        {
+          "example": 17,
+          "page": 438,
+          "status": "needs-review"
+        },
+        {
+          "example": 18,
+          "page": 438,
+          "status": "needs-review"
+        },
+        {
+          "example": 19,
+          "page": 439,
+          "status": "needs-review"
+        },
+        {
+          "example": 20,
+          "page": 439,
+          "status": "needs-review"
+        },
+        {
+          "example": 21,
+          "page": 440,
+          "status": "needs-review"
+        },
+        {
+          "example": 22,
+          "page": 440,
+          "status": "needs-review"
+        }
+      ],
+      "endPage": 446
+    },
+    {
+      "lesson": 30,
+      "title": "Final exam",
+      "startPage": 447,
+      "examples": [],
+      "endPage": 458
+    }
+  ]
+}
