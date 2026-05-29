@@ -4,8 +4,9 @@
 
 ## 当前状态
 
-- 已建立 30 个 lesson 的知识点地图。
-- 已从桌面 PDF 生成轻量索引：`data/pdf-index.json`，共 458 页、639 个例题标记。
+- 已建立普通 lesson 的知识点地图；Midterm Exam 和 Final Exam 已按需求忽略。
+- 已从桌面 PDF 生成结构化教材内容：`data/textbook-content.json`，覆盖 28 个普通 lesson、333 个教材知识点块、378 个教材例题、207 个 homework 题目。
+- 旧的轻量索引 `data/pdf-index.json` 仍保留作对照。
 - 已人工验证并录入 Lesson 1 的 4 道示范题，每题包含答案、知识点、审核提醒和至少两种无计算器解法。
 - 未验证例题不会自动进入正式题库，避免把 OCR 错题面或错误解法包装成“答案”。
 
@@ -24,8 +25,16 @@ http://127.0.0.1:4174
 ## 更新 PDF 索引
 
 ```bash
-/Users/liangjuan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/extract_pdf_index.py /Users/liangjuan/Desktop/AMC12新版教材.pdf -o data/pdf-index.json
+python3 tools/extract_pdf_index.py /path/to/AMC12新版教材.pdf -o data/pdf-index.json
 ```
+
+## 更新教材内容抽取
+
+```bash
+python3 tools/extract_textbook_content.py /path/to/AMC12新版教材.pdf -o data/textbook-content.json
+```
+
+抽取结果保留教材原有 lesson / knowledge point / example / homework 层级，不把知识点重新总结成另一套分类。PDF 公式可能有乱码，所以这些内容在网站中标记为 extracted source text，需要后续校对。
 
 ## 录入标准
 

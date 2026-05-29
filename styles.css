@@ -526,6 +526,13 @@ p {
   margin-bottom: 14px;
 }
 
+.source-text {
+  white-space: normal;
+  word-break: break-word;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+}
+
 .solution {
   border-top: 1px solid var(--line);
   padding: 15px 0;
