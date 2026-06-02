@@ -2,15 +2,10 @@ const data = window.AMC_DATA;
 const EXAM_LESSON_IDS = new Set([17, 30]);
 
 const state = {
-  lessonId: "all",
-  topic: "all",
-  contentType: "all",
-  status: "all",
+  language: localStorage.getItem("amc-language") || "en",
   query: "",
-  selectedId: null,
-  pdfIndex: null,
   textbookContent: null,
-  language: localStorage.getItem("amc-language") || "en"
+  pdfIndex: null
 };
 
 const i18n = {
@@ -20,46 +15,34 @@ const i18n = {
     brandSubtitle: "No-calculator solution studio",
     search: "Search",
     searchPlaceholder: "lesson, topic, method...",
-    curriculumMap: "Curriculum map",
-    verified: "verified",
-    lessons: "lessons",
-    indexedExamples: "indexed examples",
-    all: "All",
-    allLessons: "All lessons",
-    completeCurriculum: "Complete curriculum",
-    allTopics: "All topics",
-    allContent: "All content",
+    home: "Home",
+    lessons: "Lessons",
+    lesson: "Lesson",
     knowledgePoints: "Knowledge points",
-    textbookExamples: "Textbook examples",
+    textbookExamples: "Examples",
     homework: "Homework",
     verifiedSolutions: "Verified solutions",
-    sourceText: "Extracted source text",
     sourcePage: "Source page",
-    noSeparateContent: "This textbook heading has no separately extracted body text; its subtopics and examples appear below in the lesson directory.",
-    extractedWarning: "This text is extracted from the textbook PDF and may contain formula/OCR artifacts. Treat it as source material to review, not a finished solution.",
-    noTextbookTitle: "No extracted textbook content",
-    noTextbookText: "The textbook content file is still loading or no matching source item was extracted for this filter.",
-    needsReview: "needs review",
-    noCuratedTitle: "No curated problem yet",
-    noCuratedText: "This filter has indexed material but no verified problem card. Use the extractor script, then curate statement, topic, and solution paths.",
-    selectProblem: "Select a problem",
-    emptyText: "Use this panel to compare no-calculator approaches and audit the reasoning.",
-    focusTitle: "Every example must earn its place.",
-    focusText: "A problem is not complete until it has a lesson tag, a precise knowledge point, at least one mental path, and a checked alternative solution.",
+    sourceText: "Extracted source text",
     answer: "Answer",
-    lesson: "Lesson",
-    pending: "Pending",
-    chooseLessonTitle: "Choose a lesson first",
-    chooseLessonText: "Open a lesson from the left. The center panel will then show that lesson's knowledge-point directory and example buttons.",
-    lessonDirectory: "Lesson directory",
+    solution: "Solution",
+    solutions: "Solutions",
+    openLesson: "Open lesson",
+    open: "Open",
     examples: "examples",
-    curatedExamples: "curated",
-    indexedOnly: "indexed only",
-    openExample: "Open",
-    indexedExampleTitle: "Example awaiting curation",
-    indexedExampleText: "This example is indexed from the textbook, but its statement and no-calculator solutions have not been audited yet.",
-    directoryHint: "Select an example from the lesson directory to view the problem and solutions.",
-    selectedExample: "Selected example"
+    problems: "problems",
+    noSeparateContent: "This textbook heading has no separately extracted body text; its subtopics and examples appear in the lesson directory.",
+    extractedWarning: "This text is extracted from the textbook PDF and may contain formula/OCR artifacts. Treat it as source material to review, not a finished solution.",
+    noTextbookText: "No textbook items were extracted for this section.",
+    noSolutionYet: "No verified solution has been curated for this source item yet.",
+    notFound: "Page not found",
+    backToLesson: "Back to lesson",
+    backToHome: "Back to home",
+    studyPrompt: "Try the problem before opening the solution.",
+    allLessons: "AMC 12 lesson library",
+    homeIntro: "Choose a lesson, then drill down into its textbook knowledge points, examples, and homework.",
+    totalCatalog: "catalog items",
+    verified: "verified"
   },
   zh: {
     documentTitle: "AMC 复习题库",
@@ -67,46 +50,34 @@ const i18n = {
     brandSubtitle: "无计算器解法训练",
     search: "搜索",
     searchPlaceholder: "课程、知识点、方法...",
-    curriculumMap: "课程地图",
-    verified: "已审核",
+    home: "主页",
     lessons: "课程",
-    indexedExamples: "已索引例题",
-    all: "全部",
-    allLessons: "全部课程",
-    completeCurriculum: "完整课程体系",
-    allTopics: "全部知识点",
-    allContent: "全部内容",
+    lesson: "Lesson",
     knowledgePoints: "知识点",
-    textbookExamples: "教材例题",
+    textbookExamples: "例题",
     homework: "作业",
     verifiedSolutions: "已审核解法",
-    sourceText: "教材抽取原文",
     sourcePage: "来源页",
-    noSeparateContent: "这个教材标题没有单独抽取到正文；它的子知识点和例题会出现在本课目录下方。",
-    extractedWarning: "这段文字来自教材 PDF 自动抽取，公式和排版可能有乱码。它是待校对的教材来源，不是最终解答。",
-    noTextbookTitle: "还没有抽取到教材内容",
-    noTextbookText: "教材内容文件仍在加载，或当前筛选下没有匹配的来源条目。",
-    needsReview: "待审核",
-    noCuratedTitle: "这里还没有审核题卡",
-    noCuratedText: "这个筛选条件下有已索引材料，但还没有正式审核题卡。先用抽取脚本定位题目，再审核题面、知识点和解法。",
-    selectProblem: "选择一道题",
-    emptyText: "在这里对比无计算器解法，并检查推理是否可靠。",
-    focusTitle: "每一道例题都必须经得起审查。",
-    focusText: "一道题必须有课程标签、精确知识点、至少一种心算或无计算器路径，以及另一种可核验思路，才算真正完成。",
+    sourceText: "教材抽取原文",
     answer: "答案",
-    lesson: "课程",
-    pending: "待补充",
-    chooseLessonTitle: "先选择一个 Lesson",
-    chooseLessonText: "从左侧点进某一课。中间区域会显示本课知识点目录和例题按钮。",
-    lessonDirectory: "本课目录",
+    solution: "解法",
+    solutions: "解法",
+    openLesson: "进入课程",
+    open: "打开",
     examples: "例题",
-    curatedExamples: "已整理",
-    indexedOnly: "仅索引",
-    openExample: "查看",
-    indexedExampleTitle: "例题待整理",
-    indexedExampleText: "这道例题已经从教材索引到，但题面和无计算器解法还没有审核。",
-    directoryHint: "从本课目录中选择一道例题，右侧会显示题目和解法。",
-    selectedExample: "当前例题"
+    problems: "题目",
+    noSeparateContent: "这个教材标题没有单独抽取到正文；它的子知识点和例题会出现在本课目录里。",
+    extractedWarning: "这段文字来自教材 PDF 自动抽取，公式和排版可能有乱码。它是待校对的教材来源，不是最终解答。",
+    noTextbookText: "这个部分没有抽取到教材条目。",
+    noSolutionYet: "这条教材来源还没有整理出已审核解法。",
+    notFound: "页面不存在",
+    backToLesson: "返回课程",
+    backToHome: "返回主页",
+    studyPrompt: "先自己尝试，再展开解法。",
+    allLessons: "AMC 12 课程库",
+    homeIntro: "先选 Lesson，再逐层进入教材知识点、例题和作业。",
+    totalCatalog: "目录内容",
+    verified: "已审核"
   }
 };
 
@@ -115,34 +86,10 @@ const lessonZh = {
   5: "等差数列与等比数列", 6: "递推数列", 7: "因式分解、分式与根式", 8: "多项式与绝对值",
   9: "变换、圆与圆锥曲线", 10: "取整函数与二次函数", 11: "丢番图方程与应用题", 12: "不等式",
   13: "三角函数", 14: "对数", 15: "复数与方程", 16: "复数极坐标形式与单位根",
-  17: "期中测试", 18: "直角三角形、正多边形与面积法", 19: "正弦定理、余弦定理、中线与重心",
+  18: "直角三角形、正多边形与面积法", 19: "正弦定理、余弦定理、中线与重心",
   20: "平行线与相似三角形", 21: "角平分线与内切圆", 22: "圆", 23: "立体几何",
   24: "加法原理与乘法原理", 25: "排列组合", 26: "正整数解与递推法", 27: "古典概率",
-  28: "期望与几何概率", 29: "统计、命题与逻辑", 30: "期末测试"
-};
-
-const topicZh = {
-  "integers": "整数", "prime numbers": "质数", "prime factorization": "质因数分解", "divisors": "因数",
-  "lcm": "最小公倍数", "gcd": "最大公因数", "modular arithmetic": "模运算", "remainders": "余数",
-  "divisibility": "整除", "modular cases": "同余分类", "digits": "数位", "place value": "位值",
-  "bases": "进制", "arithmetic sequence": "等差数列", "geometric sequence": "等比数列", "series": "数列求和",
-  "recursion": "递推", "iteration": "迭代", "patterns": "规律", "algebraic factoring": "代数因式分解",
-  "fractions": "分式", "radicals": "根式", "polynomials": "多项式", "absolute value": "绝对值",
-  "functions": "函数", "coordinate geometry": "坐标几何", "circles": "圆", "conics": "圆锥曲线",
-  "floor function": "取整函数", "quadratics": "二次函数", "casework": "分类讨论", "integer equations": "整数方程",
-  "word problems": "应用题", "cauchy": "柯西不等式", "am-gm": "均值不等式", "bounds": "界限",
-  "trig": "三角函数", "compound angles": "和差角", "log rules": "对数法则", "exponents": "指数",
-  "complex numbers": "复数", "equations": "方程", "polar form": "极坐标形式", "roots of unity": "单位根",
-  "mixed review": "综合复习", "right triangles": "直角三角形", "area": "面积", "regular polygons": "正多边形",
-  "law of sines": "正弦定理", "law of cosines": "余弦定理", "centroid": "重心", "similarity": "相似",
-  "parallel lines": "平行线", "angle bisectors": "角平分线", "incircle": "内切圆", "circle geometry": "圆几何",
-  "power of a point": "点的幂", "volume": "体积", "surface area": "表面积", "3d geometry": "立体几何",
-  "counting": "计数", "sum rule": "加法原理", "product rule": "乘法原理", "permutations": "排列",
-  "combinations": "组合", "stars and bars": "隔板法", "probability": "概率", "counting outcomes": "样本计数",
-  "expected value": "期望", "geometric probability": "几何概率", "statistics": "统计", "logic": "逻辑",
-  "powers of 10": "10 的幂", "mental arithmetic": "心算", "parity": "奇偶性", "mod 3": "模 3",
-  "prime lists": "质数表", "count once": "不重不漏", "optimization": "最优化", "factorization": "因式分解",
-  "extreme principle": "极端原则", "congruence": "同余"
+  28: "期望与几何概率", 29: "统计、命题与逻辑"
 };
 
 const problemZh = {
@@ -185,57 +132,31 @@ const problemZh = {
       { name: "极端因数法", steps: ["要在固定乘积下最大化三个正因数的和，就让其中两个尽可能小。", "最小的两个不同正因数是 1 和 2。", "第三个因数必须是 2016/(1 x 2) = 1008。", "和为 1 + 2 + 1008 = 1011。"] },
       { name: "为什么不能更大", steps: ["设三个不同正因数按 x<y<z 排列。", "则 x>=1 且 y>=2，所以 xy>=2。", "因为 xyz=2016，所以 z=2016/(xy)<=1008。", "z 最大时 xy=2，只能是 x=1、y=2。", "因此最大和是 1+2+1008=1011。"] }
     ]
-  },
-  "L2-template": {
-    source: "来自课程索引",
-    title: "GCD/LCM 例题待整理",
-    prompt: "本课已索引 22 道例题。每道题必须先核对题面、答案，并写出至少两种无计算器解法后，才能加入正式题库。",
-    answer: "待补充",
-    audit: "不要在这里批量生成答案。先抽取精确数学对象，再用独立方法验证。",
-    solutions: [
-      { name: "整理检查清单", steps: ["记录来源页码和例题编号。", "指定一个主知识点，并添加可选副标签。", "先写一条简洁的心算路径，再写代数较重的解法。", "用不同方法检查最终答案。"] }
-    ]
   }
 };
 
-const lessonNav = document.querySelector("#lessonNav");
-const problemList = document.querySelector("#problemList");
-const topicTabs = document.querySelector("#topicTabs");
-const lessonTitle = document.querySelector("#lessonTitle");
+const app = document.querySelector("#app");
 const searchInput = document.querySelector("#searchInput");
-const problemDetail = document.querySelector("#problemDetail");
-const inspectorEmpty = document.querySelector("#inspectorEmpty");
 const languageToggle = document.querySelector("#languageToggle");
-
-function activeLessons() {
-  return data.lessons.filter((lesson) => !EXAM_LESSON_IDS.has(lesson.id));
-}
-
-function updateStats() {
-  const lessons = activeLessons();
-  document.querySelector("#lessonCount").textContent = lessons.length;
-  document.querySelector("#exampleCount").textContent = state.textbookContent
-    ? state.textbookContent.exampleCount + state.textbookContent.homeworkCount
-    : lessons.reduce((sum, lesson) => sum + lesson.indexedExamples, 0);
-  document.querySelector("#verifiedCount").textContent = data.problems.filter((problem) => problem.status === "verified").length;
-}
 
 function t(key) {
   return i18n[state.language][key];
 }
 
+function activeLessons() {
+  return data.lessons.filter((lesson) => !EXAM_LESSON_IDS.has(lesson.id));
+}
+
+function lessonById(id) {
+  return data.lessons.find((lesson) => lesson.id === Number(id) && !EXAM_LESSON_IDS.has(lesson.id));
+}
+
+function textbookLessonEntry(lessonId) {
+  return state.textbookContent?.lessons?.find((lesson) => lesson.lesson === Number(lessonId));
+}
+
 function lessonTitleText(lesson) {
   return state.language === "zh" ? lessonZh[lesson.id] || lesson.title : lesson.title;
-}
-
-function topicText(topic) {
-  return state.language === "zh" ? topicZh[topic] || topic : topic;
-}
-
-function statusText(status) {
-  if (status === "verified") return t("verified");
-  if (status === "needs-review") return t("needsReview");
-  return status;
 }
 
 function localizedProblem(problem) {
@@ -243,37 +164,9 @@ function localizedProblem(problem) {
   return {
     ...problem,
     ...zh,
-    answer: zh?.answer || (state.language === "zh" && problem.answer === "Pending" ? t("pending") : problem.answer),
+    answer: zh?.answer || problem.answer,
     solutions: zh?.solutions || problem.solutions
   };
-}
-
-function searchableProblem(problem) {
-  const lesson = lessonById(problem.lessonId);
-  const zh = problemZh[problem.id] || {};
-  return [
-    problem.title,
-    problem.prompt,
-    problem.topic,
-    problem.answer,
-    problem.status,
-    lesson?.title,
-    lesson ? lessonZh[lesson.id] : "",
-    zh.title,
-    zh.prompt,
-    zh.answer,
-    zh.audit,
-    ...(problem.tags || []),
-    ...(problem.tags || []).map(topicText)
-  ].join(" ").toLowerCase();
-}
-
-function lessonById(id) {
-  return data.lessons.find((lesson) => lesson.id === Number(id));
-}
-
-function textbookLessonEntry(lessonId) {
-  return state.textbookContent?.lessons?.find((lesson) => lesson.lesson === Number(lessonId));
 }
 
 function escapeHtml(value = "") {
@@ -290,520 +183,296 @@ function textBlock(value = "") {
   return escapeHtml(value || t("noSeparateContent")).replace(/\n/g, "<br>");
 }
 
-function sourceId(kind, lessonId, index) {
-  return `source-${kind}-${lessonId}-${index}`;
+function routeParts() {
+  const hash = window.location.hash.replace(/^#\/?/, "");
+  return hash ? hash.split("/").filter(Boolean) : [];
 }
 
-function isSourceId(id) {
-  return typeof id === "string" && id.startsWith("source-");
+function pageLink(parts) {
+  return `#/${parts.join("/")}`;
 }
 
-function parseSourceId(id) {
-  const [, kind, lessonId, index] = id.split("-");
-  return { kind, lessonId: Number(lessonId), index: Number(index) };
+function sourceTitle(kind, item, index) {
+  if (kind === "knowledge") return item.title || `${t("knowledgePoints")} ${index + 1}`;
+  if (kind === "homework") return `${t("homework")} ${item.number}`;
+  return `${item.starred ? "*" : ""}${t("textbookExamples")} ${item.number}`;
 }
 
-function sourceItemMatchesQuery(item, lesson, kind) {
-  const query = state.query.trim().toLowerCase();
-  if (!query) return true;
-  const haystack = [
-    lesson.title,
-    lessonZh[lesson.id],
-    kind,
-    item.title,
-    item.topic,
-    item.text,
-    item.content,
-    item.number ? `${kind} ${item.number}` : "",
-    item.page ? `page ${item.page}` : ""
-  ].join(" ").toLowerCase();
-  return haystack.includes(query);
+function sourcePreview(kind, item) {
+  const value = kind === "knowledge" ? item.content : item.text;
+  return (value || t("noSeparateContent")).split("\n").find(Boolean) || t("noSeparateContent");
 }
 
-function sourceItemsAllowed() {
-  return state.status === "all" || state.status === "needs-review";
+function verifiedProblemForExample(lessonId, exampleNumber) {
+  return data.problems.find((problem) => problem.lessonId === Number(lessonId) && problem.example === Number(exampleNumber));
 }
 
-function verifiedItemsAllowed() {
-  return state.status === "all" || state.status === "verified";
-}
-
-function getVisibleProblems() {
-  const query = state.query.trim().toLowerCase();
-  return data.problems.filter((problem) => {
-    const haystack = searchableProblem(problem);
-
-    const lessonMatch = state.lessonId === "all" || problem.lessonId === Number(state.lessonId);
-    const statusMatch = state.status === "all" || problem.status === state.status;
-    const topicMatch = state.topic === "all" || problem.topic === state.topic || problem.tags.includes(state.topic);
-    const queryMatch = !query || haystack.includes(query);
-    return lessonMatch && statusMatch && topicMatch && queryMatch;
-  });
-}
-
-function renderLessons() {
-  const lessons = activeLessons();
-  const sourceTotal = state.textbookContent
-    ? state.textbookContent.exampleCount + state.textbookContent.homeworkCount
-    : lessons.reduce((sum, lesson) => sum + lesson.indexedExamples, 0);
-  const allButton = document.createElement("button");
-  allButton.className = `lesson-button ${state.lessonId === "all" ? "active" : ""}`;
-  allButton.innerHTML = `
-    <span class="lesson-number">${t("all")}</span>
-    <span class="lesson-name">${t("completeCurriculum")}</span>
-    <span class="lesson-total">${sourceTotal}</span>
-  `;
-  allButton.addEventListener("click", () => {
-    state.lessonId = "all";
-    state.topic = "all";
-    state.contentType = "all";
-    state.selectedId = null;
-    render();
-  });
-
-  lessonNav.replaceChildren(allButton);
-  lessons.forEach((lesson) => {
-    const button = document.createElement("button");
-    button.className = `lesson-button ${state.lessonId === String(lesson.id) ? "active" : ""}`;
-    button.innerHTML = `
-      <span class="lesson-number">${lesson.id}</span>
-      <span class="lesson-name">${lessonTitleText(lesson)}</span>
-      <span class="lesson-total">${lesson.indexedExamples}</span>
-    `;
-    button.addEventListener("click", () => {
-      state.lessonId = String(lesson.id);
-      state.topic = "all";
-      state.contentType = "all";
-      state.selectedId = null;
-      render();
-    });
-    lessonNav.append(button);
-  });
-}
-
-function renderTopics() {
-  if (state.lessonId === "all") {
-    topicTabs.replaceChildren();
-    return;
-  }
-  const buttons = [
-    makeContentButton("all", t("allContent")),
-    makeContentButton("knowledge", t("knowledgePoints")),
-    makeContentButton("examples", t("textbookExamples")),
-    makeContentButton("homework", t("homework")),
-    makeContentButton("verified", t("verifiedSolutions"))
-  ];
-  topicTabs.replaceChildren(...buttons);
-}
-
-function makeContentButton(contentType, label) {
-  const button = document.createElement("button");
-  button.className = `topic-tab ${state.contentType === contentType ? "active" : ""}`;
-  button.textContent = label;
-  button.addEventListener("click", () => {
-    state.contentType = contentType;
-    state.selectedId = null;
-    render();
-  });
-  return button;
-}
-
-function indexId(lessonId, example) {
-  return `index-${lessonId}-${example}`;
-}
-
-function isIndexId(id) {
-  return typeof id === "string" && id.startsWith("index-");
-}
-
-function parseIndexId(id) {
-  const [, lessonId, example] = id.split("-");
-  return { lessonId: Number(lessonId), example: Number(example) };
-}
-
-function lessonIndexEntry(lessonId) {
-  return state.pdfIndex?.lessons?.find((lesson) => lesson.lesson === Number(lessonId));
-}
-
-function indexedExamplesForLesson(lessonId) {
-  const lesson = lessonById(lessonId);
-  const indexEntry = lessonIndexEntry(lessonId);
-  if (indexEntry?.examples?.length) {
-    const seen = new Set();
-    return indexEntry.examples
-      .filter((item) => {
-        const key = item.example;
-        if (seen.has(key)) return false;
-        seen.add(key);
-        return true;
-      })
-      .sort((a, b) => a.example - b.example);
-  }
-  return Array.from({ length: lesson.indexedExamples }, (_, index) => ({
-    example: index + 1,
-    page: null,
-    status: "needs-review"
-  }));
-}
-
-function problemForExample(lessonId, example) {
-  return data.problems.find((problem) => problem.lessonId === Number(lessonId) && problem.example === Number(example));
-}
-
-function indexedExampleMatchesQuery(exampleItem, lesson) {
-  const query = state.query.trim().toLowerCase();
-  if (!query) return true;
-  const haystack = [
-    `${t("lesson")} ${lesson.id}`,
-    lesson.title,
-    lessonZh[lesson.id],
-    `${t("examples")} ${exampleItem.example}`,
-    `example ${exampleItem.example}`,
-    exampleItem.page ? `page ${exampleItem.page}` : ""
-  ].join(" ").toLowerCase();
-  return haystack.includes(query);
-}
-
-function indexItemAllowedByStatus() {
-  return state.status === "all" || state.status === "needs-review";
-}
-
-function lessonDirectoryTopics(lessonId) {
-  const lesson = lessonById(lessonId);
-  const curatedTopics = data.problems
-    .filter((problem) => problem.lessonId === Number(lessonId))
-    .flatMap((problem) => [problem.topic, ...(problem.tags || [])]);
-  return [...new Set([...(lesson?.topics || []), ...curatedTopics])];
-}
-
-function renderLessonChoices() {
-  problemList.replaceChildren(...activeLessons().map((lesson) => {
-    const source = textbookLessonEntry(lesson.id);
-    const card = document.createElement("article");
-    card.className = "problem-card lesson-choice";
-    card.tabIndex = 0;
-    card.innerHTML = `
-      <div class="problem-head">
-        <span class="problem-title">${t("lesson")} ${lesson.id} · ${lessonTitleText(lesson)}</span>
-        <span class="lesson-total">${source ? `${source.knowledgePoints.length}/${source.examples.length}/${source.homework.length}` : lesson.indexedExamples}</span>
-      </div>
-      <p class="problem-text">${source
-        ? `${t("knowledgePoints")}: ${source.knowledgePoints.length} · ${t("textbookExamples")}: ${source.examples.length} · ${t("homework")}: ${source.homework.length}`
-        : lesson.topics.map(topicText).join(" · ")}</p>
-    `;
-    card.addEventListener("click", () => {
-      state.lessonId = String(lesson.id);
-      state.topic = "all";
-      state.contentType = "all";
-      state.selectedId = null;
-      render();
-    });
-    card.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        state.lessonId = String(lesson.id);
-        state.topic = "all";
-        state.contentType = "all";
-        state.selectedId = null;
-        render();
-      }
-    });
-    return card;
-  }));
-}
-
-function renderProblems() {
-  if (state.lessonId === "all") {
-    renderLessonChoices();
-    return;
-  }
-
-  const lesson = lessonById(state.lessonId);
+function searchableLessonText(lesson) {
   const source = textbookLessonEntry(lesson.id);
-  const curated = verifiedItemsAllowed()
-    ? getVisibleProblems().filter((problem) => problem.lessonId === lesson.id)
-    : [];
-  const sections = [];
-
-  if (source && sourceItemsAllowed()) {
-    if (state.contentType === "all" || state.contentType === "knowledge") {
-      const items = source.knowledgePoints
-        .map((item, sourceIndex) => ({ item, sourceIndex }))
-        .filter(({ item }) => sourceItemMatchesQuery(item, lesson, "knowledge"));
-      if (items.length) sections.push({ title: t("knowledgePoints"), type: "knowledge", items });
-    }
-    if (state.contentType === "all" || state.contentType === "examples") {
-      const items = source.examples
-        .map((item, sourceIndex) => ({ item, sourceIndex }))
-        .filter(({ item }) => sourceItemMatchesQuery(item, lesson, "example"));
-      if (items.length) sections.push({ title: t("textbookExamples"), type: "examples", items });
-    }
-    if (state.contentType === "all" || state.contentType === "homework") {
-      const items = source.homework
-        .map((item, sourceIndex) => ({ item, sourceIndex }))
-        .filter(({ item }) => sourceItemMatchesQuery(item, lesson, "homework"));
-      if (items.length) sections.push({ title: t("homework"), type: "homework", items });
-    }
-  }
-
-  if ((state.contentType === "all" || state.contentType === "verified") && curated.length) {
-    sections.push({ title: t("verifiedSolutions"), type: "verified", items: curated });
-  }
-
-  if (!sections.length) {
-    problemList.innerHTML = `
-      <article class="problem-card">
-        <div class="problem-head">
-          <span class="problem-title">${source ? t("noCuratedTitle") : t("noTextbookTitle")}</span>
-          <span class="status needs-review">${t("needsReview")}</span>
-        </div>
-        <p class="problem-text">${source ? t("noCuratedText") : t("noTextbookText")}</p>
-      </article>
-    `;
-    return;
-  }
-
-  const directory = document.createElement("div");
-  directory.className = "lesson-directory";
-  directory.innerHTML = `
-    <div class="directory-head">
-      <div>
-        <p class="eyebrow">${t("lessonDirectory")}</p>
-        <h3>${t("lesson")} ${lesson.id}: ${lessonTitleText(lesson)}</h3>
-      </div>
-      <div class="directory-counts">
-        <span>${source?.knowledgePoints.length || 0} ${t("knowledgePoints")}</span>
-        <span>${source?.examples.length || 0} ${t("textbookExamples")}</span>
-        <span>${source?.homework.length || 0} ${t("homework")}</span>
-        <span>${curated.length} ${t("verifiedSolutions")}</span>
-      </div>
-    </div>
-  `;
-
-  sections.forEach((section) => {
-    const sectionEl = document.createElement("section");
-    sectionEl.className = "directory-section";
-    sectionEl.innerHTML = `
-      <div class="section-title">
-        <h4>${section.title}</h4>
-        <span>${section.items.length}</span>
-      </div>
-      <div class="example-buttons"></div>
-    `;
-    const buttons = sectionEl.querySelector(".example-buttons");
-    section.items.forEach((entry, index) => {
-      const item = section.type === "verified" ? entry : entry.item;
-      const sourceIndex = section.type === "verified" ? index : entry.sourceIndex;
-      const problem = section.type === "verified" ? item : null;
-      const displayProblem = problem ? localizedProblem(problem) : null;
-      const itemId = problem ? problem.id : sourceId(section.type, lesson.id, sourceIndex);
-      const label = section.type === "knowledge"
-        ? (item.number ? `K${item.number}` : `K${index + 1}`)
-        : section.type === "homework"
-          ? `H${item.number}`
-          : section.type === "examples"
-            ? `${item.starred ? "*" : ""}E${item.number}`
-            : problem.id;
-      const title = problem
-        ? displayProblem.title
-        : section.type === "knowledge"
-          ? item.title
-          : (item.text.split("\n").find(Boolean) || `${section.title} ${item.number}`);
-      const meta = problem
-        ? statusText(problem.status)
-        : `${t("sourcePage")} ${item.page}${item.topic ? ` · ${item.topic}` : ""}`;
-      const button = document.createElement("button");
-      button.className = `example-button ${state.selectedId === itemId ? "active" : ""}`;
-      button.type = "button";
-      button.dataset.exampleId = itemId;
-      button.innerHTML = `
-        <span>${escapeHtml(label)}</span>
-        <strong>${escapeHtml(title)}</strong>
-        <small>${escapeHtml(meta)}</small>
-      `;
-      button.addEventListener("click", () => selectProblem(itemId));
-      buttons.append(button);
-    });
-    directory.append(sectionEl);
-  });
-
-  problemList.replaceChildren(directory);
+  return [
+    lesson.id,
+    lesson.title,
+    lessonZh[lesson.id],
+    ...(lesson.topics || []),
+    ...(source?.knowledgePoints || []).map((item) => `${item.title} ${item.content}`),
+    ...(source?.examples || []).map((item) => item.text),
+    ...(source?.homework || []).map((item) => item.text)
+  ].join(" ").toLowerCase();
 }
 
-function selectProblem(problemId) {
-  state.selectedId = problemId;
-  renderProblems();
-  renderDetail();
+function filteredLessons() {
+  const query = state.query.trim().toLowerCase();
+  return activeLessons().filter((lesson) => !query || searchableLessonText(lesson).includes(query));
 }
 
-function renderDetail() {
-  if (!state.selectedId) {
-    document.querySelector("#emptyTitle").textContent = state.lessonId === "all" ? t("chooseLessonTitle") : t("selectProblem");
-    document.querySelector("#emptyText").textContent = state.lessonId === "all" ? t("chooseLessonText") : t("directoryHint");
-    problemDetail.classList.add("hidden");
-    inspectorEmpty.classList.remove("hidden");
-    return;
-  }
-
-  if (isSourceId(state.selectedId)) {
-    const { kind, lessonId, index } = parseSourceId(state.selectedId);
-    const lesson = lessonById(lessonId);
-    const source = textbookLessonEntry(lessonId);
-    const collections = {
-      knowledge: source?.knowledgePoints || [],
-      examples: source?.examples || [],
-      homework: source?.homework || []
-    };
-    const item = collections[kind]?.[index];
-    if (!item || state.lessonId !== String(lessonId) || !sourceItemsAllowed()) {
-      state.selectedId = null;
-      renderDetail();
-      return;
-    }
-    const title = kind === "knowledge"
-      ? item.title
-      : `${kind === "homework" ? t("homework") : t("textbookExamples")} ${item.number}`;
-    const body = kind === "knowledge" ? item.content : item.text;
-    inspectorEmpty.classList.add("hidden");
-    problemDetail.classList.remove("hidden");
-    problemDetail.innerHTML = `
-      <p class="detail-kicker">${t("lesson")} ${lesson.id} · ${kind === "knowledge" ? t("knowledgePoints") : kind === "homework" ? t("homework") : t("textbookExamples")}</p>
-      <h2>${escapeHtml(title)}</h2>
-      <p class="meta">${t("sourcePage")}: <strong>${item.page}</strong>${item.topic ? ` · ${escapeHtml(item.topic)}` : ""}</p>
-      <div class="detail-problem source-text">${textBlock(body)}</div>
-      <div class="audit">${t("extractedWarning")}</div>
-    `;
-    return;
-  }
-
-  if (isIndexId(state.selectedId)) {
-    const { lessonId, example } = parseIndexId(state.selectedId);
-    if (state.lessonId !== String(lessonId) || !indexItemAllowedByStatus()) {
-      state.selectedId = null;
-      renderDetail();
-      return;
-    }
-    const lesson = lessonById(lessonId);
-    inspectorEmpty.classList.add("hidden");
-    problemDetail.classList.remove("hidden");
-    problemDetail.innerHTML = `
-      <p class="detail-kicker">${t("lesson")} ${lesson.id} · ${t("selectedExample")} ${example}</p>
-      <h2>${t("indexedExampleTitle")}</h2>
-      <div class="detail-problem">${t("indexedExampleText")}</div>
-      <p class="meta">${t("answer")}: <strong>${t("pending")}</strong></p>
-      <div class="audit">${t("noCuratedText")}</div>
-    `;
-    return;
-  }
-
-  const problem = getVisibleProblems().find((item) => item.id === state.selectedId);
-  if (!problem) {
-    state.selectedId = null;
-    problemDetail.classList.add("hidden");
-    inspectorEmpty.classList.remove("hidden");
-    return;
-  }
-  state.selectedId = problem.id;
-  const lesson = lessonById(problem.lessonId);
-  const displayProblem = localizedProblem(problem);
-  inspectorEmpty.classList.add("hidden");
-  problemDetail.classList.remove("hidden");
-  problemDetail.innerHTML = `
-    <p class="detail-kicker">${t("lesson")} ${lesson.id} · ${topicText(problem.topic)}</p>
-    <h2>${displayProblem.title}</h2>
-    <div class="detail-problem">${displayProblem.prompt}</div>
-    <p class="meta">${t("answer")}: <strong>${displayProblem.answer}</strong> · ${displayProblem.source}</p>
-    <div class="audit">${displayProblem.audit}</div>
-    ${displayProblem.solutions.map((solution) => `
-      <section class="solution">
-        <h3>${solution.name}</h3>
-        <ol>${solution.steps.map((step) => `<li>${step}</li>`).join("")}</ol>
-      </section>
-    `).join("")}
-  `;
-}
-
-function renderTitle() {
-  if (state.lessonId === "all") {
-    lessonTitle.textContent = t("allLessons");
-    return;
-  }
-  const lesson = lessonById(state.lessonId);
-  lessonTitle.textContent = `${t("lesson")} ${lesson.id}: ${lessonTitleText(lesson)}`;
-}
-
-function renderStaticText() {
-  updateStats();
+function renderChrome() {
   document.documentElement.lang = state.language === "zh" ? "zh-CN" : "en";
   document.title = t("documentTitle");
-  languageToggle.textContent = t("switchTo");
   document.querySelector("#brandSubtitle").textContent = t("brandSubtitle");
   document.querySelector("#searchLabel").textContent = t("search");
   searchInput.placeholder = t("searchPlaceholder");
-  document.querySelector("#eyebrow").textContent = t("curriculumMap");
-  document.querySelector("#verifiedStat").textContent = t("verified");
-  document.querySelector("#lessonStat").textContent = t("lessons");
-  document.querySelector("#exampleStat").textContent = t("indexedExamples");
-  document.querySelector("#focusTitle").textContent = t("focusTitle");
-  document.querySelector("#focusText").textContent = t("focusText");
-  document.querySelector("#emptyTitle").textContent = t("selectProblem");
-  document.querySelector("#emptyText").textContent = t("emptyText");
-  document.querySelectorAll(".chip").forEach((button) => {
-    if (button.dataset.status === "all") button.textContent = t("all");
-    if (button.dataset.status === "verified") button.textContent = t("verified");
-    if (button.dataset.status === "needs-review") button.textContent = t("needsReview");
-  });
+  searchInput.value = state.query;
+  languageToggle.textContent = t("switchTo");
 }
 
-function render() {
-  renderStaticText();
-  renderTitle();
-  renderLessons();
-  renderTopics();
-  renderProblems();
-  renderDetail();
+function layout(kicker, title, body, actions = "") {
+  app.innerHTML = `
+    <section class="page">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">${kicker}</p>
+          <h1>${title}</h1>
+        </div>
+        <div class="page-actions">${actions}</div>
+      </div>
+      ${body}
+    </section>
+  `;
 }
 
-document.querySelectorAll(".chip").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".chip").forEach((chip) => chip.classList.remove("active"));
-    button.classList.add("active");
-    state.status = button.dataset.status;
-    state.selectedId = null;
-    render();
-  });
-});
+function statsCards() {
+  const lessonCount = activeLessons().length;
+  const catalog = state.textbookContent ? state.textbookContent.exampleCount + state.textbookContent.homeworkCount : 0;
+  const verified = data.problems.filter((problem) => problem.status === "verified").length;
+  return `
+    <div class="stats">
+      <div><strong>${lessonCount}</strong><span>${t("lessons")}</span></div>
+      <div><strong>${catalog}</strong><span>${t("totalCatalog")}</span></div>
+      <div><strong>${verified}</strong><span>${t("verified")}</span></div>
+    </div>
+  `;
+}
+
+function renderHome() {
+  const cards = filteredLessons().map((lesson) => {
+    const source = textbookLessonEntry(lesson.id);
+    const counts = source
+      ? `${source.knowledgePoints.length} ${t("knowledgePoints")} · ${source.examples.length} ${t("examples")} · ${source.homework.length} ${t("homework")}`
+      : `${lesson.indexedExamples} ${t("examples")}`;
+    return `
+      <a class="lesson-card" href="${pageLink(["lesson", lesson.id])}">
+        <span class="lesson-index">${lesson.id}</span>
+        <div>
+          <h2>${escapeHtml(lessonTitleText(lesson))}</h2>
+          <p>${escapeHtml(counts)}</p>
+        </div>
+        <span class="card-action">${t("openLesson")}</span>
+      </a>
+    `;
+  }).join("");
+  layout(
+    t("home"),
+    t("allLessons"),
+    `
+      <p class="lead">${t("homeIntro")}</p>
+      ${statsCards()}
+      <div class="lesson-grid">${cards}</div>
+    `
+  );
+}
+
+function renderLesson(lessonId) {
+  const lesson = lessonById(lessonId);
+  const source = textbookLessonEntry(lessonId);
+  if (!lesson) return renderNotFound();
+
+  const knowledgeCards = (source?.knowledgePoints || []).map((item, index) => cardLink(
+    pageLink(["lesson", lesson.id, "knowledge", index]),
+    item.number ? `K${item.number}` : `K${index + 1}`,
+    item.title,
+    `${t("sourcePage")} ${item.page}`
+  )).join("");
+
+  const exampleCards = (source?.examples || []).map((item, index) => {
+    const verified = verifiedProblemForExample(lesson.id, item.number);
+    return cardLink(
+      pageLink(["lesson", lesson.id, "example", index]),
+      `${item.starred ? "*" : ""}E${item.number}`,
+      sourcePreview("example", item),
+      `${t("sourcePage")} ${item.page}${verified ? ` · ${t("verifiedSolutions")}` : ""}`
+    );
+  }).join("");
+
+  const homeworkCards = (source?.homework || []).map((item, index) => cardLink(
+    pageLink(["lesson", lesson.id, "homework", index]),
+    `H${item.number}`,
+    sourcePreview("homework", item),
+    `${t("sourcePage")} ${item.page}`
+  )).join("");
+
+  layout(
+    `${t("lesson")} ${lesson.id}`,
+    escapeHtml(lessonTitleText(lesson)),
+    `
+      <nav class="breadcrumbs"><a href="#/">${t("home")}</a><span>${t("lesson")} ${lesson.id}</span></nav>
+      <div class="section-list">
+        ${directorySection(t("knowledgePoints"), knowledgeCards)}
+        ${directorySection(t("textbookExamples"), exampleCards)}
+        ${directorySection(t("homework"), homeworkCards)}
+      </div>
+    `,
+    `<a class="ghost-button" href="#/">${t("backToHome")}</a>`
+  );
+}
+
+function directorySection(title, content) {
+  return `
+    <section class="directory-section">
+      <div class="section-title">
+        <h2>${title}</h2>
+      </div>
+      <div class="card-grid">${content || `<p class="muted">${t("noTextbookText") || ""}</p>`}</div>
+    </section>
+  `;
+}
+
+function cardLink(href, label, title, meta) {
+  return `
+    <a class="item-card" href="${href}">
+      <span>${escapeHtml(label)}</span>
+      <strong>${escapeHtml(title)}</strong>
+      <small>${escapeHtml(meta)}</small>
+    </a>
+  `;
+}
+
+function renderSourceDetail(lessonId, kind, index) {
+  const lesson = lessonById(lessonId);
+  const source = textbookLessonEntry(lessonId);
+  const collections = {
+    knowledge: source?.knowledgePoints || [],
+    example: source?.examples || [],
+    homework: source?.homework || []
+  };
+  const item = collections[kind]?.[Number(index)];
+  if (!lesson || !item) return renderNotFound();
+
+  const verified = kind === "example" ? verifiedProblemForExample(lesson.id, item.number) : null;
+  const verifiedBlock = verified ? renderVerifiedProblem(verified, true) : `
+    <section class="callout">${t("noSolutionYet")}</section>
+  `;
+
+  const content = kind === "knowledge" ? item.content : item.text;
+  layout(
+    `${t("lesson")} ${lesson.id} · ${kindLabel(kind)}`,
+    escapeHtml(sourceTitle(kind, item, Number(index))),
+    `
+      <nav class="breadcrumbs">
+        <a href="#/">${t("home")}</a>
+        <a href="${pageLink(["lesson", lesson.id])}">${t("lesson")} ${lesson.id}</a>
+        <span>${kindLabel(kind)}</span>
+      </nav>
+      <article class="detail-card">
+        <p class="meta">${t("sourcePage")}: <strong>${item.page}</strong>${item.topic ? ` · ${escapeHtml(item.topic)}` : ""}</p>
+        <div class="source-text">${textBlock(content)}</div>
+      </article>
+      <section class="callout">${t("extractedWarning")}</section>
+      ${kind === "knowledge" ? relatedExamples(lesson.id, item.title) : verifiedBlock}
+    `,
+    `<a class="ghost-button" href="${pageLink(["lesson", lesson.id])}">${t("backToLesson")}</a>`
+  );
+}
+
+function kindLabel(kind) {
+  if (kind === "knowledge") return t("knowledgePoints");
+  if (kind === "homework") return t("homework");
+  return t("textbookExamples");
+}
+
+function relatedExamples(lessonId, topic) {
+  const source = textbookLessonEntry(lessonId);
+  const examples = (source?.examples || [])
+    .map((item, index) => ({ item, index }))
+    .filter(({ item }) => item.topic === topic);
+  if (!examples.length) return "";
+  return `
+    <section class="directory-section">
+      <div class="section-title"><h2>${t("textbookExamples")}</h2></div>
+      <div class="card-grid">
+        ${examples.map(({ item, index }) => cardLink(
+          pageLink(["lesson", lessonId, "example", index]),
+          `E${item.number}`,
+          sourcePreview("example", item),
+          `${t("sourcePage")} ${item.page}`
+        )).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderVerifiedProblem(problem, embedded = false) {
+  const display = localizedProblem(problem);
+  const solutions = display.solutions.map((solution) => `
+    <details class="solution-panel">
+      <summary>${escapeHtml(solution.name || t("solution"))}</summary>
+      <ol>${solution.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
+    </details>
+  `).join("");
+  return `
+    <article class="${embedded ? "detail-card" : "verified-page"}">
+      <p class="meta">${t("answer")}: <strong>${escapeHtml(display.answer)}</strong> · ${escapeHtml(display.source || "")}</p>
+      <div class="problem-statement">${escapeHtml(display.prompt)}</div>
+      <section class="callout">${escapeHtml(display.audit || t("studyPrompt"))}</section>
+      <h2>${t("solutions")}</h2>
+      ${solutions}
+    </article>
+  `;
+}
+
+function renderNotFound() {
+  layout(t("notFound"), t("notFound"), `<p class="lead">${t("backToHome")}</p>`, `<a class="ghost-button" href="#/">${t("backToHome")}</a>`);
+}
+
+function renderRoute() {
+  renderChrome();
+  const parts = routeParts();
+  if (!parts.length) return renderHome();
+  if (parts[0] === "lesson" && parts.length === 2) return renderLesson(parts[1]);
+  if (parts[0] === "lesson" && parts.length === 4) return renderSourceDetail(parts[1], parts[2], parts[3]);
+  renderNotFound();
+}
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
-  state.selectedId = null;
-  render();
+  if (routeParts().length) window.location.hash = "#/";
+  renderRoute();
 });
 
 languageToggle.addEventListener("click", () => {
   state.language = state.language === "en" ? "zh" : "en";
   localStorage.setItem("amc-language", state.language);
-  render();
+  renderRoute();
 });
 
-render();
+window.addEventListener("hashchange", renderRoute);
 
-fetch("./data/pdf-index.json")
-  .then((response) => response.ok ? response.json() : null)
-  .then((pdfIndex) => {
-    state.pdfIndex = pdfIndex;
-    render();
-  })
-  .catch(() => {
-    state.pdfIndex = null;
-  });
+renderRoute();
 
-fetch("./data/textbook-content.json")
-  .then((response) => response.ok ? response.json() : null)
-  .then((textbookContent) => {
-    state.textbookContent = textbookContent;
-    render();
-  })
-  .catch(() => {
-    state.textbookContent = null;
-  });
+Promise.all([
+  fetch("./data/pdf-index.json").then((response) => response.ok ? response.json() : null).catch(() => null),
+  fetch("./data/textbook-content.json").then((response) => response.ok ? response.json() : null).catch(() => null)
+]).then(([pdfIndex, textbookContent]) => {
+  state.pdfIndex = pdfIndex;
+  state.textbookContent = textbookContent;
+  renderRoute();
+});
